@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 
 namespace Framework
 {
-    internal class Driver
+    public class Driver
     {
         private static IWebDriver driver;
 
