@@ -18,7 +18,7 @@ The link to the testing website - https://www.senukai.lt/
        - 5 step - Check if the user is shown a message "neegzistuoja" at the bottom of the order number field, indicating that such an order does not exist.
 
 3. Scenario - SMART NET card numbers and field check test.
-   - 1 Case - After the user ticks the box "I already have a plastic SMART NET", a new field and SMART NET card numbers appear below.
+   - 1 Case - After the user ticked the box "I already have a plastic SMART NET", a new field and SMART NET card numbers appear below.
        - 1 step – Open the senukai.lt page and press the field "SMART NET";
        - 2 step – Press the field "Tapk SMART NET nariu";
        - 3 step – Tick the box “Jau turiu plastikinę SMART NET kortelę“;
