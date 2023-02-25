@@ -25,5 +25,14 @@
             internal static string outputSmartNetCardFieldName = "//*[@class='users-session-form__label users-session-form__label--text' and @for='user_physical_card_number']";
             internal static string smartNetCardNumbers = "//*[@id='card_prefix']";
         }
+        internal class Stores
+        {
+            internal static string iconRetailsChain = "//*[@class='icon-svg icon-location site-top__menu-right-icon']";
+            internal static string buttonArrow = "//*[@class='select2-selection__arrow']";
+            internal static string dropdownList = "//*[@class='select2-results__options']";
+            internal static string fieldCitySiauliai = "//*[@class='select2-results__options']/li[text()='Šiauliai']";
+            internal static string buttonFind = "//*[@class='button-grey' and @name='button']";
+            internal static string fieldWithCityInformation = "//*[@id='Šiauliai']";
+        }
     }
 }

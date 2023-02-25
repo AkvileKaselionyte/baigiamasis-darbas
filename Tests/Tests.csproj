@@ -53,6 +53,7 @@
     <Compile Include="Senukai\FrequentlyAskedQuestionsSectionTests.cs" />
     <Compile Include="Senukai\OrderSearchTests.cs" />
     <Compile Include="Senukai\SmartNetTests.cs" />
+    <Compile Include="Senukai\StoresTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

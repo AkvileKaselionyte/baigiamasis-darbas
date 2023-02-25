@@ -59,6 +59,7 @@
     <Compile Include="Pages\Senukai\Locators.cs" />
     <Compile Include="Pages\Senukai\OrderSearch.cs" />
     <Compile Include="Pages\Senukai\SmartNet.cs" />
+    <Compile Include="Pages\Senukai\Stores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

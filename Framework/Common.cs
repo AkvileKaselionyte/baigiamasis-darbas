@@ -1,4 +1,7 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
+using System;
 
 namespace Framework
 {
@@ -23,10 +26,17 @@ namespace Framework
         {
             return GetElement(locator).Text;
         }
+
         internal static string GetAttributeValue(string locator, string attributeName) 
         {
             return GetElement(locator).GetAttribute(attributeName);
         }
 
+        internal static void WaitForElementToBeVisible(string locator) 
+        {
+            WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(10));
+            wait.PollingInterval = TimeSpan.FromSeconds(4);
+            wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(locator)));
+        }
     }
 }
