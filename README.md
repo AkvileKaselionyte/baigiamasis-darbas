@@ -28,7 +28,7 @@ The link to the testing website - https://www.senukai.lt/
    - 1 Case - After the user selects a city “Šiauliai”, information about the stores in that city is displayed.
        - 1 step – Open the senukai.lt page and press the icon of "Parduotuvių tinklas";
        - 2 step – On the map in the section "Parduotuvių tinklas", click on the arrow;
-       - 3 step – Select the field "Šiauliai" from the menu selection;
+       - 3 step – Select the field "Šiauliai" from dropdown list;
        - 4 step -	Press the button "Rasti";
        - 5 step - Check whether the user is redirected to the accurate information page with all the contact data of the shops in Šiauliai.
 
