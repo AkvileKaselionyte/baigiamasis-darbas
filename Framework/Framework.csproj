@@ -57,6 +57,7 @@
     <Compile Include="Driver.cs" />
     <Compile Include="Pages\Senukai\FrequentlyAskedQuestionsSection.cs" />
     <Compile Include="Pages\Senukai\Locators.cs" />
+    <Compile Include="Pages\Senukai\OrderSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

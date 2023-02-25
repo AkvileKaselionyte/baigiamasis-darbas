@@ -51,6 +51,7 @@
     <Compile Include="BaseTests\BaseTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Senukai\FrequentlyAskedQuestionsSectionTests.cs" />
+    <Compile Include="Senukai\OrderSearchTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
