@@ -17,7 +17,7 @@ namespace Tests.Senukai
         public void UserEnterQuestionInSearchField()
         {
             string valueInputQuestion = "kada gausiu savo užsakymą?";
-            string expectedGetOutputField = "Kada gausiu savo užsakymą? Kaip žinoti kada gausiu savo užsakymą?";
+            string expectedGetSection = "Kada gausiu savo užsakymą? Kaip žinoti kada gausiu savo užsakymą?";
 
             FrequentlyAskedQuestionsSection.ClickFieldDUK();
             FrequentlyAskedQuestionsSection.ClickFieldSearchQuestion();
@@ -26,7 +26,7 @@ namespace Tests.Senukai
 
             string actualGetSection = FrequentlyAskedQuestionsSection.GetOutputSection();
 
-            Assert.AreEqual(expectedGetOutputField, actualGetSection);
+            Assert.AreEqual(expectedGetSection, actualGetSection);
         }
     }
 }
