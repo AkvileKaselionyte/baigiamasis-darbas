@@ -34,7 +34,7 @@
 
         public static string OutputMessageBelowEmailField()
         {
-            return Common.GetElementText(Locators.UsersSignIn.outputMessage);
+            return Common.GetElementText(Locators.UsersSignIn.outputMessageBelowEmailField);
         }
 
         public static bool CheckIfEmailFieldBorderIsRed()

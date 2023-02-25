@@ -15,7 +15,7 @@
             internal static string inputOrderNumber = "//*[@class='string required form-control' and @name='order_number']";
             internal static string inputEmail = "//*[@class='string email required form-control' and @name='email']";
             internal static string buttonCheck = "//*[@class='main-button button-full-width button-size-lg' and @type='submit']";
-            internal static string outputMessage = "//*[@class='error-message']";
+            internal static string outputMessageBelowOrderNumberField = "//*[@class='error-message']";
         }
         internal class SmartNet
         {
@@ -41,7 +41,7 @@
             internal static string fieldForgotPassword = "//*[@href='/users/password/new']";
             internal static string inputEmail = "//*[@id='user_email']";
             internal static string buttonRemind = "//*[@class='main-button button-full-width button-size-lg']";
-            internal static string outputMessage = "//*[@class='error-message']";
+            internal static string outputMessageBelowEmailField = "//*[@class='error-message']";
         }
     }
 }

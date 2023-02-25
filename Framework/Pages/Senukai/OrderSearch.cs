@@ -29,7 +29,7 @@
 
         public static string OutputMessageBelowOrderNumberField()
         {
-            return Common.GetElementText(Locators.OrderSearch.outputMessage);
+            return Common.GetElementText(Locators.OrderSearch.outputMessageBelowOrderNumberField);
         }
 
     }
