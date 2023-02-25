@@ -25,12 +25,12 @@ namespace Framework.Pages.Senukai
 
         public static void ClickTheSelectionFieldInDropdownList()
         {
-            Common.ClickElement(Locators.FrequentlyAskedQuestionsSection.givenSelectionField);
+            Common.ClickElement(Locators.FrequentlyAskedQuestionsSection.selectionFieldInDropdownList);
         }
 
         public static string GetOutputSection()
         {
-            return Common.GetElementText(Locators.FrequentlyAskedQuestionsSection.sectionHowToCancelTheOrder);
+            return Common.GetElementText(Locators.FrequentlyAskedQuestionsSection.sectionWhenWillIReceiveMyOrder);
         }
     }
 }

@@ -29,7 +29,7 @@
 
         public static bool GetSmartNetCardNumbers()
         {
-            string attributeClassValue = Common.GetAttributeValue(Locators.SmartNet.smartNetCardNumbers, "value");
+            string attributeClassValue = Common.GetAttributeValue(Locators.SmartNet.outputSmartNetCardNumbers, "value");
 
             if (attributeClassValue.Contains("9440381500"))
             {

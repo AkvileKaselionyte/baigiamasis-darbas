@@ -15,7 +15,7 @@
         public static void ClickArrow()
         {
             Common.ClickElement(Locators.Stores.buttonArrow);
-            Common.WaitForElementToBeVisible(Locators.Stores.dropdownList);
+            Common.WaitForElementToBeVisible(Locators.Stores.citiesDropdownList);
         }
 
         public static void ClickFieldSiauliai()
