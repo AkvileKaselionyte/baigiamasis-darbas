@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Common.cs" />
     <Compile Include="Driver.cs" />
+    <Compile Include="Pages\Senukai\FrequentlyAskedQuestionsSection.cs" />
     <Compile Include="Pages\Senukai\Locators.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
