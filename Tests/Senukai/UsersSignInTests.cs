@@ -16,7 +16,7 @@ namespace Tests.Senukai
         public void UserEntersInvalidEmail()
         {
             string valueEmail = "invalidEmail";
-            string expectedMessage = "nerastas";
+            string expectedMessageBelowEmailField = "nerastas";
 
             UsersSignIn.ClickIconRegisterLogin();
             UsersSignIn.ClickButtonSignIn();
@@ -24,9 +24,9 @@ namespace Tests.Senukai
             UsersSignIn.InsertEmail(valueEmail);
             UsersSignIn.ClickButtonRemind();
 
-            string actualGetMessage = UsersSignIn.OutputMessageBelowEmailField();
+            string actualMessageBelowEmailField = UsersSignIn.OutputMessageBelowEmailField();
 
-            Assert.AreEqual(expectedMessage, actualGetMessage);
+            Assert.AreEqual(expectedMessageBelowEmailField, actualMessageBelowEmailField);
             Assert.IsTrue(UsersSignIn.CheckIfEmailFieldBorderIsRed());
         }
     }
