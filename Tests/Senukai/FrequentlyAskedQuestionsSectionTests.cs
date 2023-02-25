@@ -25,7 +25,7 @@ namespace Tests.Senukai
             FrequentlyAskedQuestionsSection.EnterQuestion(valueInputQuestion);
             FrequentlyAskedQuestionsSection.ClickTheSelectionFieldInDropdownList();
 
-            string actualGetSection = FrequentlyAskedQuestionsSection.GetOutputSection();
+            string actualGetSection = FrequentlyAskedQuestionsSection.OutputSection();
 
             Assert.AreEqual(expectedGetSection, actualGetSection);
         }
