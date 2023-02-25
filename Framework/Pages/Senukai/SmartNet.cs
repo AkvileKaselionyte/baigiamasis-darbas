@@ -22,12 +22,12 @@
             Common.ClickElement(Locators.SmartNet.clickAlreadyHavePlasticCard);
         }
 
-        public static string GetSmartNetCardFieldName()
+        public static string GetSmartNetCardFieldNameOutput()
         {
             return Common.GetElementText(Locators.SmartNet.outputSmartNetCardFieldName);
         }
 
-        public static bool GetSmartNetCardNumbers()
+        public static bool GetSmartNetCardNumbersOutput()
         {
             string attributeClassValue = Common.GetAttributeValue(Locators.SmartNet.outputSmartNetCardNumbers, "value");
 

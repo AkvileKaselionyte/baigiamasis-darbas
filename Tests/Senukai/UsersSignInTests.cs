@@ -24,7 +24,7 @@ namespace Tests.Senukai
             UsersSignIn.InsertEmail(valueEmail);
             UsersSignIn.ClickButtonRemind();
 
-            string actualMessageBelowEmailField = UsersSignIn.OutputMessageBelowEmailField();
+            string actualMessageBelowEmailField = UsersSignIn.GetMessageBelowEmailFieldOutput();
 
             Assert.AreEqual(expectedMessageBelowEmailField, actualMessageBelowEmailField);
             Assert.IsTrue(UsersSignIn.CheckIfEmailFieldBorderIsRed());

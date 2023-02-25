@@ -21,10 +21,10 @@ namespace Tests.Senukai
             SmartNet.ClickFieldBecomeSmartNetMember();
             SmartNet.ClickAlreadyHavePlasticCard();
 
-            string actualSmartNetFieldName = SmartNet.GetSmartNetCardFieldName();
+            string actualSmartNetFieldName = SmartNet.GetSmartNetCardFieldNameOutput();
 
             Assert.AreEqual(expectedSmartNetFieldName, actualSmartNetFieldName);
-            Assert.IsTrue(SmartNet.GetSmartNetCardNumbers());
+            Assert.IsTrue(SmartNet.GetSmartNetCardNumbersOutput());
         }
     }
 }

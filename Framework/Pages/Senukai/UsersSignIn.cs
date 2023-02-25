@@ -32,7 +32,7 @@
             Common.ClickElement(Locators.UsersSignIn.buttonRemind);
         }
 
-        public static string OutputMessageBelowEmailField()
+        public static string GetMessageBelowEmailFieldOutput()
         {
             return Common.GetElementText(Locators.UsersSignIn.outputMessageBelowEmailField);
         }

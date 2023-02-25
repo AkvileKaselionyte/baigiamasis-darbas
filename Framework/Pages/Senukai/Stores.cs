@@ -28,7 +28,7 @@
             Common.ClickElement(Locators.Stores.buttonFind);
         }
 
-        public static string OutputCitySection()
+        public static string GetCitySectionOutput()
         {
             return Common.GetElementText(Locators.Stores.fieldWithCityInformation);
         }

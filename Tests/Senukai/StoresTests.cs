@@ -22,7 +22,7 @@ namespace Tests.Senukai
             Stores.ClickFieldSiauliai();
             Stores.ClickButtonFind();
 
-            string actualCitySection = Stores.OutputCitySection();
+            string actualCitySection = Stores.GetCitySectionOutput();
 
             Assert.AreEqual(expectedCitySection, actualCitySection);
         }

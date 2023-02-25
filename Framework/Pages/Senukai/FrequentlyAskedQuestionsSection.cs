@@ -28,7 +28,7 @@ namespace Framework.Pages.Senukai
             Common.ClickElement(Locators.FrequentlyAskedQuestionsSection.selectionFieldInDropdownList);
         }
 
-        public static string OutputSection()
+        public static string GetSectionOutput()
         {
             return Common.GetElementText(Locators.FrequentlyAskedQuestionsSection.sectionWhenWillIReceiveMyOrder);
         }
