@@ -34,5 +34,14 @@
             internal static string buttonFind = "//*[@class='button-grey' and @name='button']";
             internal static string fieldWithCityInformation = "//*[@id='Šiauliai']";
         }
+        internal class UsersSignIn
+        {
+            internal static string iconRegisterLogin = "//*[@class='user-block__icon icon-svg']";
+            internal static string buttonSignIn = "//*[@class='main-button user-block-dropdown__main-button' and @href='/users/sign_in']";
+            internal static string fieldForgotPassword = "//*[@href='/users/password/new']";
+            internal static string inputEmail = "//*[@id='user_email']";
+            internal static string buttonRemind = "//*[@class='main-button button-full-width button-size-lg']";
+            internal static string outputMessage = "//*[@class='error-message']";
+        }
     }
 }

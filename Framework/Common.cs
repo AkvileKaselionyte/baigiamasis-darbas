@@ -38,5 +38,15 @@ namespace Framework
             wait.PollingInterval = TimeSpan.FromSeconds(4);
             wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(locator)));
         }
+
+        internal static void Wait(int miliseconds)
+        {
+            System.Threading.Thread.Sleep(miliseconds);
+        }
+
+        internal static string GetCssValue(string locator, string propertyName)
+        {
+            return GetElement(locator).GetCssValue(propertyName);
+        }
     }
 }
