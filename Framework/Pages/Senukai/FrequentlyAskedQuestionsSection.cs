@@ -1,4 +1,5 @@
-﻿namespace Framework.Pages.Senukai
+﻿
+namespace Framework.Pages.Senukai
 {
     public class FrequentlyAskedQuestionsSection
     {
