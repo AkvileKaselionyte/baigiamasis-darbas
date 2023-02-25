@@ -23,5 +23,10 @@ namespace Framework
         {
             return GetElement(locator).Text;
         }
+        internal static string GetAttributeValue(string locator, string attributeName) 
+        {
+            return GetElement(locator).GetAttribute(attributeName);
+        }
+
     }
 }

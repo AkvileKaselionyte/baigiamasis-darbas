@@ -17,5 +17,13 @@
             internal static string buttonCheck = "//*[@class='main-button button-full-width button-size-lg' and @type='submit']";
             internal static string outputMessage = "//*[@class='error-message']";
         }
+        internal class SmartNet
+        {
+            internal static string fieldSmartNet = "//*[@class='priority-navigation__link' and @href='https://www.senukai.lt/smart_net']";
+            internal static string fieldBecomeSmartNetMember = "//*[@class='smart-net-header__button smart-net-header__button--link']";
+            internal static string clickAlreadyHavePlasticCard = "//*[@id='user_has_physical_card']";
+            internal static string outputSmartNetCardFieldName = "//*[@class='users-session-form__label users-session-form__label--text' and @for='user_physical_card_number']";
+            internal static string smartNetCardNumbers = "//*[@id='card_prefix']";
+        }
     }
 }
