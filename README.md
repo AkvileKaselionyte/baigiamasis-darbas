@@ -2,8 +2,8 @@
 
 The link to the testing website - https://www.senukai.lt/
 
-1. Scenario - Navigating to the section with the most frequently asked questions about receiving order.
-   - 1 Case - The user has been successfully redirected to the most frequently asked questions section.
+1. Scenario - Test of the frequently asked questions section.
+   - 1 Case - The user has been successfully redirected to the frequently asked questions section about receiving order.
        - 1 step – Open the senukai.lt page and press the field "DUK";
        - 2 step - In the section “Ieškoti klausimo” enter “kada gausiu savo užsakymą?“;
        - 3 step - Click on the field in dropdown list that appears below;
@@ -17,7 +17,7 @@ The link to the testing website - https://www.senukai.lt/
        - 4 step -	Press the button "Tikrinti";
        - 5 step - Check if the user is shown a message "neegzistuoja" at the bottom of the order number field, indicating that such an order does not exist.
 
-3. Scenario - SMART NET card numbers and field check test.
+3. Scenario - SMART NET field and card numbers check test.
    - 1 Case - After the user ticked the box "I already have a plastic SMART NET", a new field and SMART NET card numbers appear below.
        - 1 step – Open the senukai.lt page and press the field "SMART NET";
        - 2 step – Press the field "Tapk SMART NET nariu";
@@ -37,7 +37,7 @@ The link to the testing website - https://www.senukai.lt/
         - 1 step – Open the senukai.lt page and press the icon of "Registruotis/Prisijungti";
         - 2 step – Press the button “Prisijungti”;
         - 3 step – Press the field “Pamiršai slaptažodį?”
-        - 4 step -	Enter an invalid email;
+        - 4 step - Enter an invalid email;
         - 5 step - Press the button “Priminti”;
         - 6 step - Check if the frame of the email field turned red and appears a message “nerastas” below this field.
      
