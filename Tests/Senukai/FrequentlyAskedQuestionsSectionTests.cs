@@ -15,7 +15,7 @@ namespace Tests.Senukai
 
 
         [Test]
-        public void UserEnterQuestionInDUKSearchField()
+        public void UserEnterQuestionInDUSearchField()
         {
             string valueInputQuestion = "kada gausiu savo užsakymą?";
             string expectedGetSection = "Kada gausiu savo užsakymą? Kaip žinoti kada gausiu savo užsakymą?";
