@@ -13,7 +13,7 @@ namespace Tests.Senukai
         }
 
         [Test]
-        public void ToTheUserSuccessfullyThrowsSmartNetCardNumbersAndField()
+        public void SmartNetFieldAndCardNumbersCheckTest()
         {
             string expectedSmartNetFieldName = "SMART NET kortelės numeris";
 
