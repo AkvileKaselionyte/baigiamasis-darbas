@@ -32,7 +32,7 @@ The link to the testing website - https://www.senukai.lt/
        - 4 step -	Press the button "Rasti";
        - 5 step - Check whether the user is redirected to the accurate information page with all the contact data of the shops in Šiauliai.
 
-5. Scenario - Email handling test for login recovery.
+5. Scenario - Password reminder feature test.
    - 1 Case - After the user enters an invalid email the frame of the email field turned red and appears a message “nerastas” below this field.
         - 1 step – Open the senukai.lt page and press the icon of "Registruotis/Prisijungti";
         - 2 step – Press the button “Prisijungti”;
