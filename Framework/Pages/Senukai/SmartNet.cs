@@ -28,18 +28,9 @@
             return Common.GetElementText(Locators.SmartNet.outputSmartNetCardFieldName);
         }
 
-        public static bool GetSmartNetCardNumbersOutput()
+        public static string GetSmartNetCardNumbersOutput()
         {
-            string attributeClassValue = Common.GetAttributeValue(Locators.SmartNet.outputSmartNetCardNumbers, "value");
-
-            if (attributeClassValue.Contains("9440381500"))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return Common.GetAttributeValue(Locators.SmartNet.outputSmartNetCardNumbers, "value");
         }
     }
 }

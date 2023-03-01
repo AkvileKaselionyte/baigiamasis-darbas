@@ -16,15 +16,17 @@ namespace Tests.Senukai
         public void SmartNetFieldAndCardNumbersCheckTest()
         {
             string expectedSmartNetFieldName = "SMART NET kortelės numeris";
+            string expectedCardNumber = "9440381500";
 
             SmartNet.ClickFieldSmartNet();
             SmartNet.ClickFieldBecomeSmartNetMember();
             SmartNet.ClickAlreadyHavePlasticCard();
 
             string actualSmartNetFieldName = SmartNet.GetSmartNetCardFieldNameOutput();
+            string actualCardNumber = SmartNet.GetSmartNetCardNumbersOutput();
 
             Assert.AreEqual(expectedSmartNetFieldName, actualSmartNetFieldName);
-            Assert.IsTrue(SmartNet.GetSmartNetCardNumbersOutput());
+            Assert.AreEqual(expectedCardNumber, actualCardNumber);
         }
     }
 }
