@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
@@ -43,5 +44,13 @@ namespace Framework
             return GetElement(locator).GetCssValue(propertyName);
         }
 
+        internal static void ScrollToElement(string locator)
+        {
+            Actions actions = new Actions(Driver.GetDriver());
+            IWebElement element = GetElement(locator);
+
+            actions.ScrollToElement(element);
+            actions.Perform();
+        }
     }
 }

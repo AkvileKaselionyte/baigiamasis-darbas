@@ -9,6 +9,7 @@
 
         public static void ClickFieldSmartNet()
         {
+            Common.ScrollToElement(Locators.SmartNet.fieldSmartNet);
             Common.ClickElement(Locators.SmartNet.fieldSmartNet);
         }
 
