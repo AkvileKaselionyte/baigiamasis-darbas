@@ -1,5 +1,4 @@
-﻿
-namespace Framework.Pages.Senukai
+﻿namespace Framework.Pages.Senukai
 {
     public class FrequentlyAskedQuestionsSection
     {
@@ -23,9 +22,10 @@ namespace Framework.Pages.Senukai
             Common.SendKeys(Locators.FrequentlyAskedQuestionsSection.inputSearchQuestion, valueInputQuestion);
         }
 
-        public static void ClickTheSelectionFieldInDropdownList()
+        public static void ClickTheSelectionFieldInDropdownList(string sectionText)
         {
-            Common.ClickElement(Locators.FrequentlyAskedQuestionsSection.selectionFieldInDropdownList);
+            string locator = $"{Locators.FrequentlyAskedQuestionsSection.selectionFieldInDropdownList}//*[contains(text(), '{sectionText}')]";
+            Common.ClickElement(locator);
         }
 
         public static string GetSectionOutput()

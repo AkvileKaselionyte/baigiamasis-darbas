@@ -1,6 +1,5 @@
 ﻿using Framework.Pages.Senukai;
 using NUnit.Framework;
-using System;
 using Tests.BaseTests;
 
 namespace Tests.Senukai
@@ -17,13 +16,13 @@ namespace Tests.Senukai
         [Test]
         public void UserEnterQuestionInDUKSearchField()
         {
-            string valueInputQuestion = "kada gausiu savo užsakymą?";
+            string valueInputQuestion = "Kada gausiu savo užsakymą?";
             string expectedGetSection = "Kada gausiu savo užsakymą? Kaip žinoti kada gausiu savo užsakymą?";
 
             FrequentlyAskedQuestionsSection.ClickFieldDUK();
             FrequentlyAskedQuestionsSection.ClickFieldSearchQuestion();
             FrequentlyAskedQuestionsSection.EnterQuestion(valueInputQuestion);
-            FrequentlyAskedQuestionsSection.ClickTheSelectionFieldInDropdownList();
+            FrequentlyAskedQuestionsSection.ClickTheSelectionFieldInDropdownList(expectedGetSection);
 
             string actualGetSection = FrequentlyAskedQuestionsSection.GetSectionOutput();
 

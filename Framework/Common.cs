@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
@@ -35,18 +36,21 @@ namespace Framework
         internal static void WaitForElementToBeVisible(string locator) 
         {
             WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(10));
-            wait.PollingInterval = TimeSpan.FromSeconds(4);
             wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(locator)));
-        }
-
-        internal static void Wait(int miliseconds)
-        {
-            System.Threading.Thread.Sleep(miliseconds);
         }
 
         internal static string GetCssValue(string locator, string propertyName)
         {
             return GetElement(locator).GetCssValue(propertyName);
+        }
+
+        internal static void ScrollToElement(string locator)
+        {
+            Actions actions = new Actions(Driver.GetDriver());
+            IWebElement element = GetElement(locator);
+
+            actions.ScrollToElement(element);
+            actions.Perform();
         }
     }
 }

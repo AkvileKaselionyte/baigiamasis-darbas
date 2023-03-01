@@ -39,16 +39,8 @@
 
         public static bool CheckIfEmailFieldBorderIsRed()
         {
-            Common.Wait(500);
             string cssBorderColor = Common.GetCssValue(Locators.UsersSignIn.inputEmail, "border-color");
-            if (cssBorderColor == "rgb(255, 0, 0)")
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return (cssBorderColor == "rgb(255, 0, 0)");
         }
     }
 }

@@ -32,6 +32,5 @@
         {
             return Common.GetElementText(Locators.Stores.fieldWithCityInformation);
         }
-
     }
 }
