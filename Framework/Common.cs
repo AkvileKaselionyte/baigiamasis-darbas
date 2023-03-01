@@ -38,14 +38,15 @@ namespace Framework
             wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(locator)));
         }
 
-        internal static void Wait(int miliseconds)
-        {
-            System.Threading.Thread.Sleep(miliseconds);
-        }
-
         internal static string GetCssValue(string locator, string propertyName)
         {
             return GetElement(locator).GetCssValue(propertyName);
+        }
+
+        internal static void WaitForElementCssAttributeToBe(string locator, string attributeName, string expectedAttributeValue)
+        {
+            WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(10));
+            wait.Until(d => d.FindElement(By.XPath(locator)).GetCssValue(attributeName) == expectedAttributeValue);
         }
     }
 }
