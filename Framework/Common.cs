@@ -35,7 +35,6 @@ namespace Framework
         internal static void WaitForElementToBeVisible(string locator) 
         {
             WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(10));
-            wait.PollingInterval = TimeSpan.FromSeconds(4);
             wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(locator)));
         }
 
