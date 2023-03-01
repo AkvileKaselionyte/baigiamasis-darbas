@@ -1,6 +1,5 @@
 ﻿using Framework.Pages.Senukai;
 using NUnit.Framework;
-using System;
 using Tests.BaseTests;
 
 namespace Tests.Senukai

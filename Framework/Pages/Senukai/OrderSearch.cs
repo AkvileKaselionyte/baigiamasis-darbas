@@ -31,6 +31,5 @@
         {
             return Common.GetElementText(Locators.OrderSearch.outputMessageBelowOrderNumberField);
         }
-
     }
 }
