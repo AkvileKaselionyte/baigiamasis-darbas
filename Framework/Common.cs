@@ -43,10 +43,5 @@ namespace Framework
             return GetElement(locator).GetCssValue(propertyName);
         }
 
-        internal static void WaitForElementCssAttributeToBe(string locator, string attributeName, string expectedAttributeValue)
-        {
-            WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(10));
-            wait.Until(d => d.FindElement(By.XPath(locator)).GetCssValue(attributeName) == expectedAttributeValue);
-        }
     }
 }
